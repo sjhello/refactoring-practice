@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 class EmployeeTest {
 
 	@ParameterizedTest
-	@ValueSource(strings = {"engineer", "salesman", "manage"})
+	@ValueSource(strings = {"engineer", "salesman", "manager"})
 	void employee_객체를_생성한다(String type) {
 		assertThat(type).isEqualTo(new Employee("sjhello", type).getType());
 	}

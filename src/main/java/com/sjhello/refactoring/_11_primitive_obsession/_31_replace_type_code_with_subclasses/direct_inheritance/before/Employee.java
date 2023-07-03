@@ -17,7 +17,7 @@ public class Employee {
 	}
 
 	private void validate(String type) {
-		List<String> legalType = List.of("engineer", "salesman", "manage");
+		List<String> legalType = List.of("engineer", "salesman", "manager");
 		if (!legalType.contains(type)) {
 			throw new IllegalArgumentException("type is not found");
 		}
